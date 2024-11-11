@@ -50,3 +50,23 @@ console.log("yo")
 
  // Initialize the game display
  displayWord();
+
+ document.getElementById("guessInput").addEventListener("keydown", function(event) {
+    const guessInput = document.getElementById("guessInput");
+
+    //listen for the enter, backspace, and letter keys
+    if (event.key === "Enter") {
+        //when enter is typed
+        const guess = guessInput.value;
+        if (guess.match(/^[a-zA-Z]$/)) { //check input
+            makeGuess(guess);
+        }
+        event.preventDefault();
+    } else if (event.key === "Backspace" || event.key === "Delete") {
+        // Allow Backspace and Delete to function as normal
+        return;
+    } else if (!event.key.match(/^[a-zA-Z]$/)) {
+        // Prevent any non-letter characters
+        event.preventDefault();
+    }
+});
