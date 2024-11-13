@@ -1,0 +1,23 @@
+h1 {
+    color: rgb(20, 73, 81);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(175, 245, 243);
+}
+
+#guessedLetters {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  rgb(20, 73, 81);
+}
+
+#remainingAttempts {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  rgb(20, 73, 81);
+}
+
+#message {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:  rgb(20, 73, 81);
+}
